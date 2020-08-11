@@ -17,19 +17,23 @@ Next, you need Porter. Follow the Porter [installation instructions](/install/).
 
 For this quickstart, the main concepts that you will learn about are bundles, mixins and the actions that you can take with bundles.
 
-* Bundles 
+* Bundle 
+
+A bundle is your application artifact, client tools, configuration and deployment logic packaged together in a bundle. 
+
 * Actions
+
+Actions are the different set of defined steps that you want to do with the bundle. The primary actions are install, upgrade, and uninstall. 
+
 * Mixins
 
-The three primary bundle actions that you will define are install, upgrade, and uninstall. 
+Mixins are the building blocks for authoring bundles. There are a number of mixins included by default and you can create new ones as well. Mixins help you define the bundle actions. 
 
-Mixins are the building blocks for authoring bundles. There are a number of mixins included by default and you can create new ones as well. Mixins help you define the bundle actions.
+## Introducing Porter the CLI
 
-## Introducing porter the CLI
+When you install Porter, you are getting the porter command line interface for building bundles. 
 
-When you install Porter, you are getting the command line interface for building bundles. There are a number of flags you can pass to porter for the various operations. 
-
-The steps for creating a bundle are:
+In general, the steps for creating a new bundle are:
 
 * Create a new directory on your local file system. 
 * Use the porter CLI with the create flag to initialize your project with a set of templates. 
@@ -46,7 +50,7 @@ The syntax might be slightly different depending on your operating system.
 mkdir -p my-bundle/ && cd my-bundle/
 ```
 
-### Use the `porter create` command to initialize your project with a set of templates:
+### Use the porter CLI with the create flag initialize your project with a set of templates:
 
 ```
 porter create
@@ -82,7 +86,6 @@ Sample output:
 NAME    CREATED         MODIFIED        LAST ACTION   LAST STATUS
 HELLO   2 seconds ago   2 seconds ago   install       succeeded
 ```
-
 
 Next, try running porter with the show flag:
 
