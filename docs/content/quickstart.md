@@ -3,6 +3,8 @@ title: QuickStart Guide
 descriptions: Get started using Porter
 ---
 
+So you're interested in learning more about Porter? Great! This guide will walk you through key concepts and use the porter CLI to illustrate those concepts. You will build a bundle from a template, install, upgrade, and uninstall the bundle. 
+
 ## Pre-requisites
 
 Docker is currently a prerequisite for using Porter. Docker is used to package up the bundle. 
@@ -15,7 +17,7 @@ Next, you need Porter. Follow the Porter [installation instructions](/install/).
 
 ## Porter Key Concepts 
 
-For this quickstart, the main concepts that you will learn about are bundles, mixins and the actions that you can take with bundles.
+For this quickstart, the main concepts that you will learn about are bundles, actions, and mixins that you can take with bundles.
 
 * Bundle 
 
